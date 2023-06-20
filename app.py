@@ -1,10 +1,11 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 @app.route("/")
 def halaman_home():
-    return render_template("home.html");
+    css_url = url_for('static', filename='css/style.css');
+    return render_template("home.html", css_url=css_url);
 
 @app.route("/login")
 def halaman_login():
