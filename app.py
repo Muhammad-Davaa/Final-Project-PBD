@@ -31,5 +31,6 @@ def data_transaksi_umum():
 def cetak_laporan():
     return render_template("cetak_laporan.html");
 
+
 if __name__ == "__main__":
     app.run(debug=True)
