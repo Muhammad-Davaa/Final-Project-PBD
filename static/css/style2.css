@@ -1,0 +1,57 @@
+.slideshow-container {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  .mySlides {
+    display: none;
+  }
+  
+  .slideshow-container img {
+    width: 60%;
+    height: auto;
+  }
+  
+  /* Tambahkan animasi transisi */
+  .fade {
+    -webkit-animation: fade 2s linear infinite;
+    animation: fade 2s linear infinite;
+  }
+  
+  @-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  
+  @keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+  }
+  .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  .social-media li {
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 60px;
+    height: 60px;
+  }
