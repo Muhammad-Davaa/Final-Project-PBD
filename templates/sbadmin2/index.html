@@ -27,12 +27,12 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url_for('Home') }}">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Dashboard</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="index.html">
+            <a class="nav-link" href="{{ url_for('Role') }}">
                 <i class="fas fa-users"></i>
                 <span>Role</span></a>
         </li>
@@ -47,17 +47,17 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="{{ url_for('Profile') }}">
                 <i class="fas fa-fw fa-user"></i>
                 <span>Profile</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="{{ url_for('EditProfile') }}">
                 <i class="fas fa-fw fa-user-edit"></i>
                 <span>Edit Profile</span></a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="{{ url_for('ChangePassword') }}">
                 <i class="fas fa-key"></i>
                 <span>Change Password</span></a>
         </li>
@@ -72,7 +72,7 @@
 
         <!-- Nav Item - Pages Collapse Menu -->
         <li class="nav-item">
-            <a class="nav-link collapsed" href="#">
+            <a class="nav-link" href="{{ url_for('DataMember') }}">
                 <i class="fas fa-fw fa-folder"></i>
                 <span>Data Member</span>
             </a>
@@ -80,14 +80,14 @@
 
         <!-- Nav Item - Charts -->
         <li class="nav-item">
-            <a class="nav-link" href="charts.html">
+            <a class="nav-link" href="{{ url_for('DataTransaksi') }}">
                 <i class="fas fa-fw fa-money-check"></i>
                 <span>Data Transaksi</span></a>
         </li>
 
         <!-- Nav Item - Tables -->
         <li class="nav-item">
-            <a class="nav-link" href="login.html">
+            <a class="nav-link" href="{{ url_for('CetakLaporan') }}">
                 <i class="fas fa-fw fa-light fa-print"></i>
                 <span>Cetak Laporan</span></a>
         </li>
@@ -288,9 +288,9 @@
                     <li class="nav-item dropdown no-arrow">
                         <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Douglas McGee</span>
-                            <img class="img-profile rounded-circle"
-                                src="img/undraw_profile.svg">
+                            <span class="mr-2 d-none d-lg-inline text-gray-600 small">Feri irawan</span>
+                            <img class="img-profile rounded-circle" 
+                            src="static/img/feri.JPG">
                         </a>
                         <!-- Dropdown - User Information -->
                         <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"

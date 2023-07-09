@@ -24,11 +24,10 @@ class RegistrationForm(FlaskForm):
 def Home():
     title = 'Halaman Home'
     return render_template('sbadmin2/index.html', title=title)
-
-        
+    
 @app.route("/login")
 def Login():
-    css_url = url_for('static', filename='css/sb-admin-2.min.css');
+    css_url = url_for('static', filename='css/sb-admin-2.min.css')
     return render_template('sbadmin2/login.html', css_url=css_url)
 
 @app.route("/register", methods=['GET', 'POST'])
@@ -39,6 +38,42 @@ def Register():
         return render_template('sbadmin2/register.html', title=title, form=form)
     else:
         return "<p>Berhasil !</p>"
+
+@app.route('/Role')
+def Role():
+    return render_template('sbadmin2/Role.html')
+
+@app.route('/Profile')
+def Profile():
+    return render_template('sbadmin2/Profile.html')
+
+@app.route('/EditProfile')
+def EditProfile():
+    return render_template('sbadmin2/EditProfile.html')
+
+@app.route('/ChangePassword')
+def ChangePassword():
+    return render_template('sbadmin2/ChangePassword.html')
+
+@app.route('/DataMember')
+def DataMember():
+    return render_template('sbadmin2/DataMember.html')
+
+@app.route('/DataTransaksi')
+def DataTransaksi():
+    return render_template('sbadmin2/DataTransaksi.html')
+
+@app.route('/CetakLaporan')
+def CetakLaporan():
+    return render_template('sbadmin2/CetakLaporan.html')
+
+@app.route('/BuktiPembayaran')
+def BuktiPembayaran():
+    return render_template('sbadmin2/BuktiPembayaran.html')
+
+@app.route('/InformasiPelangan')
+def InformasiPelangan():
+    return render_template('sbadmin2/InformasiPelangan.html')
 
 if __name__ == "__main__":
     app.run(debug=True)
