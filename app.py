@@ -43,9 +43,17 @@ def Register():
 def Role():
     return render_template('sbadmin2/Role.html')
 
+@app.route('/HalamanMember')
+def HalamanMember():
+    return render_template('sbadmin2/HalamanMember.html')
+
 @app.route('/Profile')
 def Profile():
     return render_template('sbadmin2/Profile.html')
+
+@app.route('/ProfileMember')
+def ProfileMember():
+    return render_template('sbadmin2/ProfileMember.html')
 
 @app.route('/EditProfile')
 def EditProfile():
@@ -54,6 +62,10 @@ def EditProfile():
 @app.route('/ChangePassword')
 def ChangePassword():
     return render_template('sbadmin2/ChangePassword.html')
+
+@app.route('/ChangePasswordMember')
+def ChangePasswordMember():
+    return render_template('sbadmin2/ChangePasswordMember.html')
 
 @app.route('/DataMember')
 def DataMember():
